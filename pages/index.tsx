@@ -34,7 +34,7 @@ export default function NextPage({collections}:Props){
     }
 }
   return (
-    <div className="snap-y snap-mandatory overflow-scroll overflow-x-hidden">
+    <div className="">
       <Head>
         <title>NFT Drop</title>
         <link rel="icon" href="/favicon.ico" />
