@@ -45,7 +45,7 @@ export default function NextPage({collections}:Props){
 
       <div className = 'snap-start h-screen w-screen  flex flex-col transition duration-300 ease-in-out  dark:transition dark:duration-300 dark:ease-in-out dark:bg-gray-900 ' >
         <nav className ='flex justify-between px-10 py-5'>
-          <h1 className = 'font-jose text-2xl cursor-pointer'>Yoni APE Clube</h1>
+          <h1 className = 'font-jose text-2xl cursor-pointer'>Yoni NFT Collection</h1>
           <div>
           {renderThemeChanger()}
           </div>

@@ -6,7 +6,6 @@ import {MoonIcon, SunIcon} from '@heroicons/react/outline'
 import Link from 'next/link';
 import { GetServerSideProps } from 'next';
 import { sanityClient } from '../../lib/sanity.server';
-import { id } from '@ethersproject/hash';
 import {urlFor} from '../../lib/sanity'
 import { Collection } from '../../typings';
 import { BigNumber } from '@ethersproject/bignumber';
@@ -76,7 +75,7 @@ function NFTDropPage({collection}:Props) {
             const claimedTokenId = tx[0].id
             const clamedNFT = await tx[0].data(); 
 
-            toast('HOORAY, You Successfuly Minted!!!',{
+            toast('HOORAY, You Successfully Minted!!!',{
                 duration: 8000,
                 style:{
                     background:'green',
@@ -98,7 +97,7 @@ function NFTDropPage({collection}:Props) {
                     color: 'white',
                     fontWeight: 'bolder',
                     fontSize: '17px',
-                    padding : '20px'
+                    padding : '20px',
                 }
             })
         }).finally(()=>{
